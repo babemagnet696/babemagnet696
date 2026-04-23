@@ -1,4 +1,8 @@
-## Hi there 👋
+## Hey it's Tyson!
+
+> Attempting to break into the developer scene
+> It's harder than I thought
+> At least I can help out where I work
 
 <p align="left">
   <img src="https://api.boot.dev/v1/users/public/5acfc1e6-8852-45b1-b46f-9983921530da/thumbnail" >
