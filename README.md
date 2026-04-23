@@ -1,5 +1,9 @@
 ## Hi there 👋
 
+<p align="left">
+  <img src="https://api.boot.dev/v1/users/public/5acfc1e6-8852-45b1-b46f-9983921530da/thumbnail" >
+</p>
+
 <!--
 **babemagnet696/babemagnet696** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
