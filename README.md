@@ -1,32 +1,64 @@
 # Hey, I'm Tyson
 
-I'm a **Backend Developer in Progress** with an IT support background and a growing focus on building practical backend tools.
+I'm a **Backend Developer in Progress** documenting my path from IT support into software development.
 
-Most of my learning has come from building real things, breaking them, debugging them, and slowly making them better. I like projects where the goal is not just to write code, but to make an annoying workflow easier, faster, or more reliable.
+Right now, this profile is not really a hiring page. It is more of a public record of what I am learning, what I am building, and how my understanding of software is growing over time.
 
-## What I'm Focused On
+I started with Python, which helped me learn basic coding structure, scripting, automation, and how to break problems into smaller pieces. Since then, I have been spending most of my time with Go, PostgreSQL, server-rendered web apps, and backend-focused projects.
 
-Right now, I'm working on becoming stronger with:
+## What I'm Working Toward
+
+My current goal is to become a **junior backend developer**.
+
+Long term, I would love to learn lower-level languages like **C++** and **Rust**, and eventually work on interesting technology at a large game development studio.
+
+For now, my focus is simpler and more practical:
+
+I want to build tools that help people around me, automate annoying workflows, and make real tasks easier.
+
+## Background
+
+I work in IT support for tax software, mostly around local government workflows.
+
+That gives me a lot of exposure to the messy side of software:
+
+* real users
+* confusing workflows
+* repetitive manual processes
+* data that needs to be searched, moved, cleaned, or organized
+* systems that need to be understood before they can be improved
+
+That has shaped how I think about programming. I am not just interested in making code run. I want to understand how the whole system behaves.
+
+## Currently Building With
+
+These are the tools and concepts I am actively working with:
 
 * Go
+* Python
 * PostgreSQL
 * SQL
-* Backend architecture
-* REST-style APIs
-* Server-rendered web apps
+* HTML
+* CSS
 * HTMX
-* Debugging and refactoring
-* Building tools around real workflows
+* Bootstrap
+* Server-rendered templates
+* REST-style APIs
+* Database-backed applications
+* Internal tools
+* Automation scripts
 
-I'm especially interested in backend development because I like thinking through data flow, system behavior, database design, and how different parts of an app work together.
+I am still learning, so I try not to present this as a finished skill list. These are the things I am practicing, using, breaking, fixing, and slowly getting better at.
 
 ## Featured Project
 
 ### Support Meeting App Demo
 
-My main project is a support meeting dashboard built to organize support tickets, meeting notes, county/customer information, and archived meeting history.
+My main public project is a sanitized demo of an internal support meeting app.
 
-The goal of the project is to replace a messy manual workflow with a cleaner internal tool that makes support meetings easier to run and review.
+The app pulls support tickets from Desk365, mirrors them into a local PostgreSQL database, and organizes them by client/county and product group for recurring support meetings.
+
+The goal is to replace a more manual meeting workflow with a cleaner internal dashboard where support staff can review tickets, add notes, view conversation threads, and keep meeting information organized.
 
 Built with:
 
@@ -36,57 +68,96 @@ Built with:
 * goose
 * HTMX
 * Bootstrap
-* HTML templates
+* Go `html/template`
+* Desk365 API integration
 
-What this project includes:
+Some of the main pieces include:
 
-* County/customer-based ticket organization
-* Grouped ticket views
-* Meeting notes
-* Ticket notes
-* Archive pages
-* Search-focused archive data
-* Database-backed storage
-* Server-rendered UI updates with HTMX
+* ticket sync from Desk365 into Postgres
+* grouped ticket dashboard
+* county/client-level notes
+* ticket-level notes
+* conversation thread view
+* server-side sessions
+* protected routes
+* local database mirror
+* server-rendered HTML updates with HTMX
 
-This project has been my main way of learning how backend pieces fit together in a real app: routes, handlers, templates, SQL queries, migrations, data modeling, and UI behavior.
+This project has been my main learning ground for understanding how backend applications fit together: routing, handlers, templates, SQL queries, migrations, authentication, API calls, data modeling, and UI behavior.
 
-## How I Think About Code
+## What I'm Learning From It
 
-I'm still learning, but I care a lot about understanding what the code is actually doing.
+The biggest thing I have learned so far is that building software is a lot of deciding what **not** to build yet.
 
-I try to focus on:
+I am learning to think ahead before adding features:
 
-* Clear data flow
-* Simple function boundaries
-* Good names
-* Useful database structure
-* Avoiding unnecessary complexity
-* Debugging from the system level instead of guessing
-* Making small improvements over time
+* what is worth building now
+* what can wait until later
+* what should be prepared for without overbuilding
+* what might become useful but does not belong in the code yet
+* what complexity is solving a real problem versus creating a new one
 
-I like building boring tools that are actually useful.
+Simplicity usually ends up being better, but I think dealing with complexity is part of learning why that is true.
 
-## Background
+It is easy to say "keep it simple" when you have not had to untangle something messy yet. Running into confusing code, awkward data flow, or features that do too much has helped me understand why simple boundaries and clear structure matter.
 
-I work in IT support, so I spend a lot of time around real users, real workflows, and real problems that software is supposed to solve.
+I am also learning that debugging is not just fixing errors. It is tracing the environment the error came from.
 
-That background helps me think about software from the user's side too:
+When something breaks, I try to move through the layers:
 
-* What is confusing?
-* What takes too long?
-* What gets repeated too often?
-* What information is hard to find?
-* What would make the process easier?
+* Is this a UI problem?
+* Is the request wrong?
+* Is the handler doing the wrong thing?
+* Is the template receiving bad data?
+* Is the database query returning something unexpected?
+* Is the data model wrong?
+* Did I make a bad assumption earlier?
 
-That is the kind of thinking I want to bring into backend development.
+That kind of debugging has become one of the most useful skills I have picked up. Instead of staring at the final symptom, I am getting better at tracing the issue backward until I find where the behavior actually changed.
 
-## Currently Learning
+## Problems I'm Interested In
 
-* Writing cleaner Go code
-* Designing better PostgreSQL schemas
-* Building maintainable server-rendered apps
-* Improving SQL queries
-* Structuring larger projects
-* Understanding backend tradeoffs
-* Getting better at debugging production-style problems
+I have not worked on enough different kinds of projects yet to know exactly what niche I like most.
+
+For now, the problems that interest me are things like:
+
+* turning manual workflows into useful tools
+* building database-backed apps
+* making information easier to search and filter
+* connecting APIs to local systems
+* automating repetitive work
+* designing simple internal dashboards
+* improving messy processes one piece at a time
+
+I like boring software when it solves a real problem.
+
+## How I Think About Learning
+
+I am trying to move from:
+
+> "I got it to work"
+
+to:
+
+> "I understand why it works, where it can fail, and how to make it better."
+
+That means spending more time on debugging, naming, structure, data flow, and tradeoffs instead of only chasing the next feature.
+
+I am not trying to look like an expert before I am one. I am trying to build enough real things that my understanding catches up with my ambition.
+
+## Current Direction
+
+Right now, I am focused on:
+
+* writing better Go
+* improving my SQL
+* designing cleaner database schemas
+* understanding backend architecture
+* building practical internal tools
+* getting better at debugging
+* learning how to structure larger projects
+* documenting my progress honestly
+
+Eventually, I want to explore lower-level programming, performance, systems, game technology, and more advanced backend concepts.
+
+For now, I am building one useful thing at a time.
